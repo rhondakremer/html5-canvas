@@ -55,7 +55,6 @@ let colorArray = ["#6BB251", "#40A819", "#45FF00", "#B2009E", "#FF00E2"]
 window.addEventListener('mousemove', function(event) {
     mouse.x = event.x;
     mouse.y = event.y;
-    console.log(mouse)
 });
 
 window.addEventListener('resize', function() {

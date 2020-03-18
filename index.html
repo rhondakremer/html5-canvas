@@ -10,12 +10,30 @@
         }
         canvas {
             background-color: black;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+        #content {
+            z-index: 1;
+            position: relative;
         }
     </style>
 </head>
 <body>
     <canvas></canvas>
-
-    <script type="text/javascript" src="javascript/bubbles.js"></script>
+    <div id="content">
+        <!-- <button onclick="changeScript(this.id)" id="bubbles">Bubbles</button>
+        <button onclick="changeScript(this.id)" id="gravity">Gravity</button> -->
+    </div>
+    <script id="currentScript" type="text/javascript" src="javascript/gravity.js"></script>
+    <script>
+        // function changeScript(id) {
+        //     console.log(id)
+        //     var script= document.getElementsByTagName('script')[0];
+        //     script.src= 'javascript/' + id + '.js';
+        //     console.log(script)
+        // }
+    </script>
 </body>
 </html>
