@@ -5,8 +5,6 @@ let c = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-
-
 // Variables
 let mouse = {
     x: innerWidth / 2,
@@ -56,9 +54,11 @@ function Object(x, y, radius, color) {
     }
 }
 
+let objects;
 // Implementation
 function init() {
-
+    objects = [];
+    
 }
 
 // Animation loop
