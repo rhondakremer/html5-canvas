@@ -96,7 +96,7 @@ function init() {
     particles = [];
 
     for (let i = 0; i < 50; i++) {
-        const radius = (Math.random() * 3) + 1; 
+        const radius = (Math.random() * 4) + 1; 
         particles.push(new Particle(canvas.width/2, canvas.height/2, radius, randomColor(colors)))   
     }
     // console.log(particles)
@@ -105,7 +105,7 @@ function init() {
 // Animation loop
 function animate() {
     requestAnimationFrame(animate);
-    c.fillStyle = 'rgba(0, 0, 0, 0.09)'; // create trail effect- draws new white rectangle that with transparency and layers produces fade
+    c.fillStyle = 'rgba(0, 0, 0, 0.09)'; // create trail effect- draws new black rectangle that with transparency and layers produces fade
     c.fillRect(0, 0, canvas.width, canvas.height);
 
     particles.forEach(particle => {
